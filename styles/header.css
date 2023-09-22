@@ -15,6 +15,15 @@ a {
     color: rgb(14, 14, 100);
 }
 
+h2 {
+    color: rgb(14, 14, 100);
+
+}
+
+button {
+    cursor: pointer;
+}
+
 header {
     background-image: linear-gradient(30deg, #08B1E6, #81DFF8);
     display: flex;
@@ -26,8 +35,68 @@ header {
     height: 8rem;
 }
 
+header h1,
+header a {
+    font-size: 2.5rem;
+    color: rgb(14, 14, 100);
+    text-decoration: none;
+}
+
 header button {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+header button p {
+    margin-right: .625rem;
+    font-size: 1rem;
+}
+
+.headericon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.headericon-true {
+    transform: rotateZ(180deg);
+}
+
+.dropdown {
+    position: absolute;
+    right: 36px;
+    top: 90px;
+    transition: 0.5s ease;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-false {
     display: none;
+}
+
+.dropdown-true {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 6.25rem;
+    height: auto;
+    padding: .9375rem;
+    box-shadow: 2px 5px 28px -4px rgba(128, 128, 128, 0.75);
+    -webkit-box-shadow: 2px 5px 28px -4px rgba(128, 128, 128, 0.75);
+    -moz-box-shadow: 2px 5px 28px -4px rgba(128, 128, 128, 0.75);
+}
+
+.dropdown a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    color: rgb(14, 14, 100);
 }
 
 .add-btn {
